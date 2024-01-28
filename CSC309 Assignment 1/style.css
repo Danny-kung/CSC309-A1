@@ -1,0 +1,111 @@
+*{ /* This is the line that causes my list to be bulleted ****Fix this later, and need to adjust the spacing between bullets and items*/
+    margin: 0;
+    padding: 0; /* This makes the issue*/
+
+}
+h1{
+    text-align: center;
+    font-family: sans-serif;
+}
+p{
+    font-family: sans-serif;
+    text-align: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Create the styling for the navigation bar*/
+header ul{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    list-style: none;
+    background-color: #8d9090;
+
+}
+header a{
+    color: #00b8d4;
+    text-decoration: none;
+    padding: 2rem 10px;
+    display: block;
+    text-align:left;
+    font-family: sans-serif;
+    
+}
+header li:hover a{
+    background-color: #5b5d5d;
+    color:white;
+}
+header li{
+    float: left;
+}header li:active a{
+    color:#b2f5ea
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: #8d9090;
+    color: white;
+    text-align: center; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.profilepicture img{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background-color: azure;
+    text-align: center;
+    font-family: sans-serif;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    
+}
+.card-container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.projectcard{
+    width: 330px;
+    background-color: #ceb2f0;
+    margin:10px;
+    border-radius: 10px;
+    justify-content: center;
+}
+.projectcard img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.dropdown select{
+    background-color: #77a76f;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);;
+}
+.email{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
