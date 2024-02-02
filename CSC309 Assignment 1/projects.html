@@ -12,10 +12,10 @@
 <header>
     <nav>
         <ul>
-            <li><a href="index.html"> Index</a> </li>
-            <li><a href="about.html"> About</a> </li>
-            <li><a href="projects.html"> Projects</a> </li>
-            <li><a href="contact.html"> Contact</a> </li>
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="about.html">About</a> </li>
+            <li><a href="projects.html" class="active">Projects</a> </li>
+            <li><a href="contact.html">Contact</a> </li>
         </ul>
     </nav>
 </header>
@@ -24,56 +24,66 @@
     <p>Here are some of my current and past projects</p>
     <div class="card-container">
         <div class="projectcard">
-            <img src="placeholder.jpeg">
-            <h1>Project 1</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ducimus praesentium numquam nesciunt nobis quas natus quos? Voluptatibus deleniti veritatis sapiente temporibus dolore soluta? Ipsam laudantium voluptatem rem cum tenetur.</p>
+            <img src="project1.jpg">
+            <h1>3D Printer Project</h1>
+            <br>
+            <p>The first project is a 3D printer CAD model made using SolidWorks. This model was designed for a small-medium sized
+                setting such as an office or small shop and makes use of multiple different custom components to work. 
+            </p>
         </div>
         <br>
         <div class="projectcard">
-            <img src="placeholder.jpeg">
-            <h1>Project 2</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa saepe reiciendis, officia totam, veritatis voluptatibus dignissimos repudiandae nobis, ea sed asperiores laudantium eveniet iste suscipit fugiat. Ratione possimus eveniet similique!</p>
+            <img src="project2.jpg">
+            <h1>Pokemon Classifier</h1>
+            <br>
+            <p>The second project is an upcoming project that makes use of deep learning deep learning to classify pokemon given a dataset.
+                This model will be trained using a large database and can classify a given image based on the information it has been trained. 
+            </p>
         </div>
         <br>
         <div class="projectcard">
-            <img src="placeholder.jpeg">
-            <h1>Project 3</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi repellendus, voluptatem omnis odit tempore, tenetur explicabo fugit molestiae eum nulla consequuntur amet beatae doloribus harum ab commodi suscipit libero asperiores!</p>
+            <img src="project3.jpg">
+            <h1>Stock Market Tracker</h1>
+            <br>
+            <p>The third project is a upcoming project of a financial stock site. This will allow the user to track specific stocks
+                with real-time market data and charts of the user's desire.
+            </p>
         </div>
         <br>
     </div>
     <br>
 
     <p>Need a full stack web developer? Tell me about your project.</p>
-    <form>
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email"><br>
-        <br>
-        <label for="project">Type of Project:</label>
-        <br>
-        <div class="dropdown">
-            <select>
-                <option>Personal Website</option>
-                <option>eCommerce</option>
-                <option>Game</option>
-            </select>
+    <div class="card-container">
+        <form>
+            <label for="email">Your Email:</label>
+            <input type="text" id="email" name="email"><br>
             <br>
-        </div>
-        <br>
-        <label for="txtarea"> Enter your project concept here</label><br><br>
-
-        <textarea id="txtarea" name="txtarea" rows="4" cols="50" placeholder="Enter your project concept here">
-        </textarea>
-        <br>
-        <label for="myfile">Select a file:</label>
-        <input type="file" id="myfile" name="myfile"><br><br>
-        <input type="checkbox" id="check" name="agree" value="agree">
-        <label for="agree"> You agree to receive emails from me</label>
-        <br>
-        <br>
-        <button class="send">Send</button>
-        
-    </form>
+            <label for="project">Type of Project:</label>
+            <br>
+            <div class="dropdown">
+                <select>
+                    <option>Personal Website</option>
+                    <option>eCommerce</option>
+                    <option>Game</option>
+                </select>
+                <br>
+            </div>
+            <br>
+            <label for="txtarea"> Enter your project concept here</label><br><br>
+            
+            <textarea id="txtarea" name="txtarea" rows="4" cols="50" placeholder="Enter your project concept here">
+            </textarea>
+            <br>
+            <label for="myfile">Attachment:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <input type="checkbox" id="check" name="agree" value="agree">
+            <label for="agree"> You agree to receive emails from me</label>
+            <br>
+            <br>
+            <button class="send">Submit</button>  
+        </form>
+    </div>
 
 </body>
 <footer>
