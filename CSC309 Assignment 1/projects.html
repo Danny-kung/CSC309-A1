@@ -31,7 +31,6 @@
                 setting such as an office or small shop and makes use of multiple different custom components to work. 
             </p>
         </div>
-        <br>
         <div class="projectcard">
             <img src="project2.jpg">
             <h1>Pokemon Classifier</h1>
@@ -40,7 +39,6 @@
                 This model will be trained using a large database and can classify a given image based on the information it has been trained. 
             </p>
         </div>
-        <br>
         <div class="projectcard">
             <img src="project3.jpg">
             <h1>Stock Market Tracker</h1>
@@ -49,39 +47,42 @@
                 with real-time market data and charts of the user's desire.
             </p>
         </div>
-        <br>
     </div>
     <br>
 
-    <p>Need a full stack web developer? Tell me about your project.</p>
-    <div class="card-container">
-        <form>
-            <label for="email">Your Email:</label>
-            <input type="text" id="email" name="email"><br>
-            <br>
-            <label for="project">Type of Project:</label>
-            <br>
-            <div class="dropdown">
-                <select>
-                    <option>Personal Website</option>
-                    <option>eCommerce</option>
-                    <option>Game</option>
-                </select>
-                <br>
+    <p>Need a full stack web developer? Tell me about your project.</p><br>
+    <div>
+        <form id="myForm" class="form-container">
+            <div class="form-item">
+                <label for="email">Your Email:</label>
+                <input type="text" id="email" name="email" required>
             </div>
-            <br>
-            <label for="txtarea"> Enter your project concept here</label><br><br>
-            
-            <textarea id="txtarea" name="txtarea" rows="4" cols="50" placeholder="Enter your project concept here">
-            </textarea>
-            <br>
-            <label for="myfile">Attachment:</label>
-            <input type="file" id="myfile" name="myfile"><br><br>
-            <input type="checkbox" id="check" name="agree" value="agree">
-            <label for="agree"> You agree to receive emails from me</label>
-            <br>
-            <br>
-            <button class="send">Submit</button>  
+            <div class="form-item">
+                <label for="project">Type of Project:</label>
+                    <div class="dropdown">
+                        <select required>
+                            <option value="">Please Select</option>
+                            <option value="Personal Website">Personal Website</option>
+                            <option value="eCommerce">eCommerce</option>
+                            <option value="Game">Game</option>
+                        </select>
+                    </div>
+            </div>
+            <div class="form-item">
+                <label for="txtarea">Enter your project concept here</label>
+                <textarea id="txtarea" name="txtarea" rows="4" cols="50" placeholder="Enter your project concept here" required></textarea>
+            </div>
+            <div class="form-item inline">
+                <label for="myfile">Attachment:</label>
+                <input type="file" id="myfile" name="myfile">
+            </div>
+            <div class="form-item inline">
+                <input class="large-checkbox" type="checkbox" id="check" name="agree" value="agree">
+                <label for="agree"> You agree to receive emails from me</label>
+            </div>
+            <div class="form-item">
+                <button class="send" type="submit">Submit</button>  
+            </div>
         </form>
     </div>
 
